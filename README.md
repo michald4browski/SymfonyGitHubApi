@@ -20,62 +20,64 @@ You need to supply URLs as a arguments in application URL, for example like that
 For example for repos: https://github.com/docker/compose and https://github.com/dotnet/core URL should look like that:
 * `http://localhost:8000/?firstUrl=https://github.com/docker/compose&secondUrl=https://github.com/dotnet/core`
 And answer from application will look like that:
-> {
->  "reposInfo": [
->    {
->      "repository": "https://github.com/docker/compose",
->      "forksCount": 4070,
->      "stargazerCount": 24320,
->      "watchersCount": 24320,
->      "latestRelease": {
->        "date": "2021-11-08 11:36:34.000000",
->        "timezone_type": 2,
->        "timezone": "Z"
->      },
->      "openPulls": 30,
->      "closedPulls": 0
->    },
->    {
->      "repository": "https://github.com/dotnet/core",
->      "forksCount": 4289,
->      "stargazerCount": 16646,
->      "watchersCount": 16646,
->      "latestRelease": {
->        "date": "2021-11-08 17:11:30.000000",
->        "timezone_type": 2,
->        "timezone": "Z"
->      },
->      "openPulls": 0,
->      "closedPulls": 0
->    }
->  ],
->  "comparison": [
->    {
->      "comparedParam": "forks",
->      "quantityDifference": 219,
->      "percentageDifference": "5.24%"
->    },
->    {
->      "comparedParam": "stars",
->      "quantityDifference": 7674,
->      "percentageDifference": "37.47%"
->    },
->    {
->      "comparedParam": "watchers",
->      "quantityDifference": 7674,
->      "percentageDifference": "37.47%"
->    },
->    {
->      "comparedParam": "openPulls",
->      "quantityDifference": 30,
->      "percentageDifference": "0%"
->    },
->    {
->      "comparedParam": "closedPulls",
->      "quantityDifference": 0,
->      "percentageDifference": "0%"
->    },
->    "Difference between the latest releases is 0 days, 5 hours, 34 minutes"
->  ]
->}
+```json
+{
+  "reposInfo": [
+    {
+      "repository": "https://github.com/docker/compose",
+      "forksCount": 4070,
+      "stargazerCount": 24320,
+      "watchersCount": 24320,
+      "latestRelease": {
+        "date": "2021-11-08 11:36:34.000000",
+        "timezone_type": 2,
+        "timezone": "Z"
+      },
+      "openPulls": 30,
+      "closedPulls": 0
+    },
+    {
+      "repository": "https://github.com/dotnet/core",
+      "forksCount": 4289,
+      "stargazerCount": 16646,
+      "watchersCount": 16646,
+      "latestRelease": {
+        "date": "2021-11-08 17:11:30.000000",
+        "timezone_type": 2,
+        "timezone": "Z"
+      },
+      "openPulls": 0,
+      "closedPulls": 0
+    }
+  ],
+  "comparison": [
+    {
+      "comparedParam": "forks",
+      "quantityDifference": 219,
+      "percentageDifference": "5.24%"
+    },
+    {
+      "comparedParam": "stars",
+      "quantityDifference": 7674,
+      "percentageDifference": "37.47%"
+    },
+    {
+      "comparedParam": "watchers",
+      "quantityDifference": 7674,
+      "percentageDifference": "37.47%"
+    },
+    {
+      "comparedParam": "openPulls",
+      "quantityDifference": 30,
+      "percentageDifference": "0%"
+    },
+    {
+      "comparedParam": "closedPulls",
+      "quantityDifference": 0,
+      "percentageDifference": "0%"
+    },
+    "Difference between the latest releases is 0 days, 5 hours, 34 minutes"
+  ]
+}
 
+```
