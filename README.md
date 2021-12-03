@@ -1,5 +1,5 @@
 # SymfonyGitHubApi
-The Symfony GitHub Api is simple application createt to give possibility of simple comparison of two GitHub repositories. Application compares parameter:
+The Symfony GitHub Api is simple application createt to give possibility of simple comparison of two GitHub repositories. Application compares parameters:
 * forks
 * stars
 * watchers
