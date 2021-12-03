@@ -10,6 +10,8 @@ The Symfony GitHub Api is simple application createt to give possibility of simp
 * and the usual Symfony application requirements (https://symfony.com/doc/current/setup.html).
 ### Usage
 If you have Symfony installed you just need to go to the project directory and run in terminal command:
+* `composer install`
+and then
 * `symfony serve`
 Now you can access application in browser at given URL (https://localhost:8000/ by default).
 To compare GitHub repositories you need to have repos URLs looking like:
